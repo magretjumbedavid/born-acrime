@@ -1,0 +1,348 @@
+body{
+    font-family: gotham;
+    color: rgb(49, 2, 49);
+}
+@font-face {
+    font-family: gothambold;
+    src: url(fonts/GothamPro-Bold.ttf);
+}
+@font-face {
+    font-family: gotham;
+    src: url(fonts/GothamPro.ttf);
+}
+#logo{
+    width: 3%;
+}
+.title{
+    text-align: center;
+    font-family: gotham;
+    color: rgb(49, 2, 49);
+}
+.options{
+    display:flex;
+    gap: 2%;
+    margin-left: 25%;
+}
+
+.options li{
+    list-style: none;
+    display: inline;  
+} 
+a{
+  text-decoration: none;
+  color: rgb(49, 2, 49);
+}
+.options a:hover {
+    color: rgb(193, 4, 187);
+  }
+  .options a.active {
+    color: rgb(187, 63, 183);
+  }
+#front_image{
+    width: 100%;
+    height: 600px;
+    filter: brightness(50%);
+}
+.bb_blogs{
+    color:rgb(246, 216, 245);
+    position: absolute;
+    font-family: gothambold;
+    font-size: 30px;
+    width:60% ;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#our{
+    text-align: center;
+    margin-top: 5%;
+}
+.recent_reviews{
+    display: flex;
+    margin-left: 2%;
+    gap: 10%;
+    margin-top: 5%;
+}
+.weep{
+    width: 40%;
+    border: solid 3px purple;
+    background-color: rgb(255, 231, 235);
+    border-radius:10px ;
+    text-align: center;
+    padding: 2%;
+}
+.weep img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.weep img:hover {
+    transform: scale(1.2);
+}
+.born{
+    width: 40%;
+    border: solid 3px purple;
+    background-color: rgb(255, 231, 235);
+    border-radius:10px ;
+    text-align: center;
+    padding: 2%;
+}
+.born img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.born img:hover {
+    transform: scale(1.2);
+}
+#next{
+    text-align: center;
+    margin-top: 5%;
+}
+.next_books_first{
+    display: flex;
+    gap: 5%;
+    margin-top: 5%;
+    
+}
+.feminist{
+    width: 30%;
+    border: solid 3px purple;
+    background-color: rgb(255, 231, 235);
+    border-radius:10px ;
+    text-align: center;
+    padding: 2%;
+}
+.feminist img {
+    transition: transform 0.3s ease-in-out;
+    width: 60%;
+}
+
+.feminist img:hover {
+    transform: scale(1.2);
+}
+.alchemist{
+    width: 30%;
+    border: solid 3px purple;
+    background-color: rgb(255, 231, 235);
+    border-radius:10px ;
+    text-align: center;
+    padding: 2%;
+}
+.alchemist img {
+    transition: transform 0.3s ease-in-out;
+    width: 60%;
+}
+
+.alchemist img:hover {
+    transform: scale(1.2);
+}
+.becoming{
+    width: 30%;
+    border: solid 3px purple;
+    background-color: rgb(255, 231, 235);
+    border-radius:10px ;
+    text-align: center;
+    padding: 2%;
+}
+.becoming img {
+    transition: transform 0.3s ease-in-out;
+    width: 60%;
+}
+
+.becoming img:hover {
+    transform: scale(1.2);
+}
+.next_books_second{
+    display: flex;
+    gap: 5%;
+    margin-top: 5%;
+}
+.louding{
+    width: 30%;
+    border: solid 3px purple;
+    background-color: rgb(255, 231, 235);
+    border-radius:10px ;
+    text-align: center;
+    padding: 2%;
+}
+.louding img {
+    transition: transform 0.3s ease-in-out;
+    width: 60%;
+}
+
+.louding img:hover {
+    transform: scale(1.2);
+}
+.homegoing{
+    width: 30%;
+    border: solid 3px purple;
+    background-color: rgb(255, 231, 235);
+    border-radius:10px ;
+    text-align: center;
+    padding: 2%;
+}
+.homegoing img {
+    transition: transform 0.3s ease-in-out;
+    width: 60%;
+}
+
+.homegoing img:hover {
+    transform: scale(1.2);
+}
+.cheese{
+    width: 30%;
+    border: solid 3px purple;
+    background-color: rgb(255, 231, 235);
+    border-radius:10px ;
+    text-align: center;
+    padding: 2%;
+}
+.cheese img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.cheese img:hover {
+    transform: scale(1.2);
+}
+.next_books_third{
+    display: flex;
+    gap: 5%;
+    margin-top: 5%;
+}
+.habits{
+    border: solid 1px purple;
+    width: 30%;
+    border: solid 3px purple;
+    background-color: rgb(255, 231, 235);
+    border-radius:10px ;
+    text-align: center;
+    padding: 2%;
+}
+.habits img {
+    transition: transform 0.3s ease-in-out;
+    width: 60%;
+}
+
+.habits img:hover {
+    transform: scale(1.2);
+}
+.howtomake{
+    border: solid 1px purple;
+    width: 30%;
+    border: solid 3px purple;
+    background-color: rgb(255, 231, 235);
+    border-radius:10px ;
+    text-align: center;
+    padding: 2%;
+}
+.howtomake img {
+    transition: transform 0.3s ease-in-out;
+    width: 55%;
+}
+
+.howtomake img:hover {
+    transform: scale(1.2);
+}
+.lions_gaze{
+    width: 30%;
+    border: solid 3px purple;
+    background-color: rgb(255, 231, 235);
+    border-radius:10px ;
+    text-align: center;
+    padding: 2%;
+}
+.lions_gaze img {
+    transition: transform 0.3s ease-in-out;
+    width: 60%;
+}
+
+.lions_gaze img:hover {
+    transform: scale(1.2);
+}
+.subscribe{
+    background-color: rgb(49, 2, 49);
+    color: rgb(246, 216, 245);
+    border-radius: 12px;
+    padding: 3%;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+#email{
+    width: 40%;
+    padding: 2%;
+    background-color: rgb(246, 216, 245);
+}
+.btn{
+    width: 20%;
+    padding: 2%;
+    background-color: rgb(246, 216, 245);
+    transition-duration: 0.4s;
+}
+.btn:hover{
+    background-color: rgb(193, 4, 187);
+    color: rgb(246, 216, 245);
+}
+.foot{
+    margin-top: 3%;
+}
+#copyright{
+    text-align: center;
+}
+.socials{
+    text-align: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+@media screen and (max-width:350px){
+    body {
+        margin: 0;
+        width: 100%;
+        font-family: gotham;
+        padding: 0;
+        position: relative;
+        height: 100%; 
+    }
+    }
+    @media screen and (min-width: 351px) and (max-width: 580px){
+        body {
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            font-family: gotham;
+            position: relative;
+            height: 100%; 
+            overflow-x: hidden;
+        }
+        }
+    
+    @media screen and (min-width: 581px) and (max-width: 740px){
+        body {
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            font-family: gotham;
+            position: relative;
+            height: 100%; 
+        }
+        }
+    @media screen and (min-width: 741px) and (max-width: 1040px){
+        body {
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            font-family: gotham;
+            position: relative;
+            height: 100%; 
+        }
+        }
+    @media screen and  (min-width: 1041px) {
+        body {
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            font-family: gotham;
+            position: relative;
+            height: 100%; 
+        }
+        } 
+    

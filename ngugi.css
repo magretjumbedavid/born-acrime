@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: gotham;  
+    color: rgb(49, 2, 49);
+  }
+  
+
+@font-face {
+    font-family: gothambold;
+    src: url(fonts/GothamPro-Bold.ttf);
+}
+@font-face {
+    font-family: gotham;
+    src: url(fonts/GothamPro.ttf);
+}
+#logo{
+    width:3%;
+
+}
+.navigation{
+    text-align: center;
+    font-family: gotham;
+    color: rgb(49, 2, 49);
+    line-height: 5vh;
+}
+.options{
+    display:flex;
+    gap: 2%;
+    margin-left: 25%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.options li{
+    list-style: none;
+    display: inline;
+}
+a{
+  text-decoration: none;
+  color: rgb(49, 2, 49);
+}
+.options a:hover {
+    color: rgb(193, 4, 187);
+  }
+  .options a.active {
+    color: rgb(187, 63, 183);
+  }
+.subscribe{
+    background-color: rgb(49, 2, 49);
+    color: rgb(246, 216, 245);
+    border-radius: 12px;
+    padding: 3%;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+#email{
+    width: 40%;
+    padding: 2%;
+    background-color: rgb(246, 216, 245);
+}
+.btn{
+    width: 20%;
+    padding: 2%;
+    background-color: rgb(246, 216, 245);
+    transition-duration: 0.4s;
+}
+.btn:hover{
+    background-color: rgb(193, 4, 187);
+    color: rgb(246, 216, 245);
+}
+.foot{
+    margin-top: 3%;
+}
+#copyright{
+    text-align: center;
+}
+.socials{
+    text-align: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.subscribe{
+    background-color: rgb(49, 2, 49);
+    color: rgb(246, 216, 245);
+    border-radius: 12px;
+    padding: 3%;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+#email{
+    width: 40%;
+    padding: 2%;
+    background-color: rgb(246, 216, 245);
+}
+.btn{
+    width: 20%;
+    padding: 2%;
+    background-color: rgb(246, 216, 245);
+    transition-duration: 0.4s;
+}
+.btn:hover{
+    background-color: rgb(193, 4, 187);
+    color: rgb(246, 216, 245);
+}
+.foot{
+    margin-top: 3%;
+}
+#copyright{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.socials{
+    text-align: center;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+  .home-page {
+    background-color: lightgrey;
+    margin: 2rem auto;
+    max-width: 180vh;
+    max-height: 160vh;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  main {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    width: 90%;
+  }
+
+  
+  .left-page img {
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    padding-top: 10%;
+    
+  }
+  
+  .bottom {
+    margin-top: 20px;
+    font-size: 30px;
+    color: black;
+  }
+  
+  .right-page{
+    width: 70%;
+    margin-top: 1%;
+  
+  }
+  .about{
+    padding-top: 4%;
+    text-align: justify;
+  }
+  .right-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .right-page p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+ 
+  .biography {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-left: 4px solid #333;
+  margin-top: 10%;
+  }
+
+  .biography p{
+    margin-top: 20px;
+  }
+  
+  .biography span {
+    font-weight: bold;
+  }
+  
+  .biography button {
+    margin-bottom: 20px;
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .books {
+    display: flex;
+    gap:7%;
+    margin-left: 20%;
+    margin-top: 5%;
+    padding-bottom: 50px;
+    
+  }
+ 
+  .book {
+    padding-top:-2px;
+    width: 140px;
+  }
+  
+  .books img {
+    width: 120%;
+    border-radius: 8px;
+  }
+  
+  .button a{
+    background-color: rgb(49, 2, 49);
+    color: rgb(246, 216, 245);
+  }
+
+.books-head h2 {
+  
+    font-size: 150%;
+    color: #FF6F61;
+    margin-left: 10%;
+    margin-top: 70px;
+
+}
+
+.book-list {
+ 
+    overflow: hidden;
+    position: relative;
+}
+.book-animation{
+    display: flex;
+    animation: scroll 5s linear infinite;
+   
+}
+.book img{
+width: 20vw;
+height: 40vh;
+}
+.book {
+    padding: 200px;
+}
+
+.title {
+    color: #555;
+    background: #F9F9F9;
+     text-align: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 200px;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
