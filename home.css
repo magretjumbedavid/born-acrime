@@ -1,0 +1,441 @@
+
+body, h1, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+@font-face {
+    font-family: gotham;
+    src: url(fontss/GothamPro.ttf);
+}
+@font-face {
+    font-family:gothambold;
+    src: url(fontss/GothamPro-Bold.ttf);
+}
+@font-face {
+    font-family: gothamitalic;
+    src: url(fontss/GothamPro-Italic.ttf);
+}
+.text-content {
+    flex: 1 1 300px;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+   font-family: gothambold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.text-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    font-family:gotham;
+}
+
+.image-container {
+    flex: 1 1 300px;
+    max-width: 600px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform .1s ease;
+}
+  
+  .image-container:hover {
+    transform: scale(0.5);
+  }
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.festival-hero {
+    position: relative;
+    width: 100%;
+    height: 48vh; 
+    min-height: 600px;
+    max-height: 700px;
+    background: url(photos/_\ \(7\).jpeg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 6px rgba(119, 115, 115, 0.2);
+    margin-top: 40px;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.25); 
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #ffffff; 
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    margin-top: 15%;
+    color: #e0d6d6;
+    margin-bottom: 8%;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero-content p {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #e6dede;
+    margin-bottom: 5rem;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: 12%;
+
+  }
+  
+  .hero-btn {
+    display: inline-block;
+    padding: 0.7rem 2.2rem;
+    background: #eda4ff;
+    color: #f0e0f1;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    margin-bottom: 18%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+  }
+  
+  .hero-btn:hover {
+    background: #b7b0d1;
+  }
+  
+  @media (max-width: 700px) {
+    .festival-hero {
+      height: 38vh;
+      min-height: 200px;
+      max-height: 320px;
+    }
+    .hero-content h1 {
+      font-size: 1.5rem;
+    }
+    .hero-content p {
+      font-size: 0.9rem;
+    }
+    .hero-btn {
+      padding: 0.5rem 1.4rem;
+      font-size: 0.95rem;
+    }
+  }
+  
+  
+
+.full-review {
+  all: unset;
+  width: 120px;
+  height: 50px;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 8px 29px;
+  display: flex;
+  margin-top: 10%;
+ margin-left: 35%;
+ text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  font-size: large;
+  touch-action: manipulation;
+}
+
+.full-review::after,
+.full-review::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.full-review::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  color: #f0f0f0;
+  text-decoration: none;
+  background: #dbabf1;
+  border-radius: 10px;
+}
+
+.full-review::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  color: #f0f0f0;
+  background: #fcd183;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.full-review:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+  color: white;
+}
+
+.full-review:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.full-review:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+@media (max-width: 768px) {
+    .welcome-section {
+        flex-direction: column;
+    }
+
+    .text-content h1 {
+        font-size: 2rem;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@font-face {
+    font-family: gothambold;
+    src: url(fonts/GothamPro-Bold.ttf);
+}
+@font-face {
+    font-family: gotham;
+    src: url(fonts/GothamPro.ttf);
+}
+
+
+#logo{
+    width: 3%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.title{
+    text-align: center;
+    font-family: gotham;
+    color: rgb(49, 2, 49);
+}
+.options{
+    display:flex;
+    gap: 2%;
+    margin-left: 25%;
+    padding-left: 7%;
+}
+
+.options li{
+    list-style: none;
+    display: inline;  
+} 
+a{
+  text-decoration: none;
+  color: rgb(49, 2, 49);
+}
+.options a:hover {
+    color: rgb(193, 4, 187);
+  }
+  .options a.active {
+    color: rgb(187, 63, 183);
+  }
+.subscribe{
+    background-color: rgb(49, 2, 49);
+    color: rgb(246, 216, 245);
+    border-radius: 12px;
+    padding: 3%;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+#email{
+    width: 40%;
+    padding: 2%;
+    background-color: rgb(246, 216, 245);
+}
+.btn{
+    width: 20%;
+    padding: 2%;
+    background-color: rgb(246, 216, 245);
+    transition-duration: 0.4s;
+}
+.btn:hover{
+    background-color: rgb(193, 4, 187);
+    color: rgb(246, 216, 245);
+}
+.foot{
+    margin-top: 3%;
+}
+#copyright{
+    text-align: center;
+}
+.socials{
+    text-align: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+@media screen and (max-width:350px){
+    body {
+        margin: 0;
+        width: 100%;
+        font-family: gotham;
+        padding: 0;
+        position: relative;
+        height: 100%; 
+    }
+    }
+    @media screen and (min-width: 351px) and (max-width: 580px){
+        body {
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            font-family: gotham;
+            position: relative;
+            height: 100%; 
+            overflow-x: hidden;
+        }
+        }
+    
+    @media screen and (min-width: 581px) and (max-width: 740px){
+        body {
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            font-family: gotham;
+            position: relative;
+            height: 100%; 
+        }
+        }
+    @media screen and (min-width: 741px) and (max-width: 1040px){
+        body {
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            font-family: gotham;
+            position: relative;
+            height: 100%; 
+        }
+        }
+    @media screen and  (min-width: 1041px) {
+        body {
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            font-family: gotham;
+            position: relative;
+            height: 100%; 
+        }
+        } 
+    
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 5%;
+}
+
+.text-content {
+    flex: 1 1 300px;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.image-container {
+    position: relative;
+    flex: 1 1 300px;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.main-image {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    border: rgb(219, 196, 219) solid 1px;
+}
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .text-content {
+        max-width: 100%;
+        margin: 0;
+    }
+    .image-container {
+        max-width: 100%;
+        margin: 0;
+    }
+    .main-image {
+        width: 100%;
+        height: auto;
+    }
+    .text-content h1 {
+        font-size: 2rem;
+    }
+    .text-content p {
+        font-size: 0.9rem;
+    }
+}
