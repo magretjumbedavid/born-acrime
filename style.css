@@ -53,10 +53,10 @@
     
 }
 #flag{
-width: 10px;
+width: 300px;
 display: flex;
 gap: 200px;
-/* margin-left: 300px; */
+margin-left: 100px;
 }
 body{
     font-family: gotham;
